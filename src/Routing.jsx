@@ -5,7 +5,7 @@ import Payment from "./Pages/Payment/Payment";
 import Orders from "./Pages/Orders/Orders";
 import Cart from "./Pages/Cart/Cart";
 import Results from "./Pages/Result/Results";
-import ProductDetails from "./Pages/productDetails/productDetail";
+import ProductDetails from "./Pages/ProductDetails/productDetail";
 import Auth from "./Pages/Auth/Auth";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
