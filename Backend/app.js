@@ -5,7 +5,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const { Message } = require("firebase-functions/pubsub");
 dotenv.config();
-const stripe = require("stripe")(process.env.STRIPE_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 app.use(cors({ origin: true }))
@@ -24,6 +24,7 @@ app.post("/payment/create", async (req, res) => {
             currency: "usd"
         });
         console.log(paymentIntent)
+
         res.status(201).json({
             clientSecret: paymentIntent.client_secret,
         });

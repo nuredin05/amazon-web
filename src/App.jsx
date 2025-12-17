@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React, { useContext, useEffect, useState } from 'react'
 import './App.css'
 import { Routing } from './Routing'
 import Loader from './Components/Loader/Loader'
