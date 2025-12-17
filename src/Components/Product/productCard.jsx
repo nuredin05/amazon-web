@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { Rating } from '@mui/material'
-import CurrencyFormat from '../CurencyFormat/CurencyFormat'
+import CurrencyFormat from '../curencyFormat/curencyFormat'
 import classes from './Product.module.css'
 import { Link } from 'react-router-dom'
 import { DataContext } from '../dataProvider/dataProvider'
-import { Type } from '../../utils/action.type'
+import { Type } from '../../Utils/action.type'
 const productCard = ({ product, flex, renderDesc, renderAdd }) => {
     const { image, title, id, rating, price, description } = product;
     const [state, dispatch] = useContext(DataContext)
