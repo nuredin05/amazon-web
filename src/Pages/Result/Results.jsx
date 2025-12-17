@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../../Components/Layout/Layout";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { productUrl } from "../../utils/endPoints";
+import { productUrl } from "../../Utils/endPoints";
 import ProductCard from "../../Components/Product/productCard";
 import classes from "./Result.module.css";
 import Loader from "../../Components/Loader/Loader";

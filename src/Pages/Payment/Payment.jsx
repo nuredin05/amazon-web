@@ -7,10 +7,10 @@ import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 import CurrencyFormat from "../../Components/curencyFormat/curencyFormat";
 import { axiosInstance } from "../../Api/axios";
 import { ClipLoader } from "react-spinners";
-import { db } from "../../utils/firebase";
+import { db } from "../../Utils/firebase";
 import { getFirestore, collection, doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import { Type } from "../../utils/action.type";
+import { Type } from "../../Utils/action.type";
 
 
 

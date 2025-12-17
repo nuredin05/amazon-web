@@ -2,13 +2,13 @@ import React, { useContext, useState } from "react";
 import Layout from "../../Components/Layout/Layout";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import classes from "./signUp.module.css";
-import { auth } from "../../utils/firebase";
+import { auth } from "../../Utils/firebase";
 import {
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
 } from "firebase/auth";
 import { DataContext } from "../../Components/dataProvider/dataProvider";
-import { Type } from "../../utils/action.type";
+import { Type } from "../../Utils/action.type";
 import { ClipLoader } from "react-spinners";
 
 const Auth = () => {

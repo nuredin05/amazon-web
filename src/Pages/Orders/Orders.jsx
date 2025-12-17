@@ -11,7 +11,7 @@ import {
     orderBy,
     onSnapshot,
 } from "firebase/firestore";
-import { db } from "../../utils/firebase";
+import { db } from "../../Utils/firebase";
 import ProductCard from "../../Components/Product/productCard";
 
 const Orders = () => {

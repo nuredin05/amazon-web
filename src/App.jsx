@@ -3,8 +3,8 @@ import './App.css'
 import { Routing } from './Routing'
 import Loader from './Components/Loader/Loader'
 import { DataContext } from './Components/dataProvider/dataProvider'
-import { auth } from './utils/firebase'
-import { Type } from './utils/action.type'
+import { auth } from './Utils/firebase'
+import { Type } from './Utils/action.type'
 
 function App() {
   const [{ user }, dispatch] = useContext(DataContext)
